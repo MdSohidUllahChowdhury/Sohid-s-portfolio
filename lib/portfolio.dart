@@ -14,15 +14,32 @@ class _portfolioState extends State<portfolio> {
   Widget build(BuildContext context) {
     return  Scaffold(
 
-        appBar: AppBar(
-          backgroundColor: Colors.greenAccent,
-          title:Text('Welcome pepole',
-          style: TextStyle(
-            fontSize: 800,
-             
-          ),),
-          ),
+        backgroundColor: Color.fromARGB(168, 0, 0, 0),
 
-    );
+        appBar: AppBar(
+          leading: PopupMenuButton(
+              icon: Icon(Icons.menu),
+              color: Colors.black,
+              itemBuilder: (context) => [
+                    PopupMenuItem(
+                      child: TextButton(
+                        child: Text(
+                          'Proects',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        onPressed: () {},
+                      ),
+                    ),
+                    PopupMenuItem(
+                      child: TextButton(
+                        child: Text(
+                          'About',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        onPressed: () {},
+                      ),
+                    )
+                  ])),
+        );
   }
 }
