@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, dead_code
 import 'package:flutter/material.dart';
+import 'package:sohid_portfolio/portfolio.dart';
 
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,  
       
-    
+      home: portfolio(),
     );
   }
 }
