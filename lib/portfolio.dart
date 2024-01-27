@@ -1,20 +1,19 @@
-// ignore_for_file: camel_case_types, prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 
-class portfolio extends StatefulWidget {
-  const portfolio({super.key});
+class Portfolio extends StatefulWidget {
+  const Portfolio({super.key});
 
   @override
-  State<portfolio> createState() => _portfolioState();
+  State<Portfolio> createState() => _PortfolioState();
 }
 
-class _portfolioState extends State<portfolio> {
+class _PortfolioState extends State<Portfolio> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-
-        backgroundColor: Color.fromARGB(168, 0, 0, 0),
+    return Scaffold(
+     // backgroundColor: Color.fromARGB(168, 0, 0, 0),
 
         appBar: AppBar(
           leading: PopupMenuButton(
@@ -24,12 +23,13 @@ class _portfolioState extends State<portfolio> {
                     PopupMenuItem(
                       child: TextButton(
                         child: Text(
-                          'Proects',
+                          'Projects',
                           style: TextStyle(color: Colors.white),
                         ),
                         onPressed: () {},
                       ),
                     ),
+                    
                     PopupMenuItem(
                       child: TextButton(
                         child: Text(
@@ -40,6 +40,38 @@ class _portfolioState extends State<portfolio> {
                       ),
                     )
                   ])),
-        );
+
+body: Center(child: ElevatedButton(onPressed: (){
+  showModalBottomSheet(
+    backgroundColor: Colors.green,
+    enableDrag: true,
+  
+   context: context, builder: (context){
+    return Column(
+      mainAxisSize: MainAxisSize.max,
+      children: [
+        ListTile(
+                    title: Text('GitHub'),
+                    subtitle: Text('It save your project and can access able from anywere'),
+        ),
+         ListTile(
+                    title: Text('GitHub'),
+                    subtitle: Text('It save your project and can access able from anywere'),
+        ),
+         ListTile(
+                    title: Text('GitHub'),
+                    subtitle: Text('It save your project and can ac3cess able from anywere'),
+        ),
+         ListTile(
+                    title: Text('GitHub'),
+                    subtitle: Text('It save your project and can access able from anywere'),
+        ),
+      ],
+    );
+  } 
+  );
+}, child: Text("Press On It"))),
+                  
+    );
   }
 }

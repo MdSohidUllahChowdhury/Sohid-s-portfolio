@@ -4,16 +4,24 @@ import 'package:sohid_portfolio/portfolio.dart';
 
 
 void main() {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-
-    initialRoute: 'home', //?where is main page starts.
-
-    routes: {
-      'home':(context) => portfolio(),
-
-    },
-  ) );
+  runApp(const MyApp());
 }
 
- 
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,  
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        primaryColor: Colors.orange
+      ),
+      home: Portfolio(),
+      
+    
+    
+    );
+  }
+}
