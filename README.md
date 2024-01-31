@@ -1,6 +1,6 @@
-# sohid_portfolio
+<h6>sohid_portfolio</h6>
 
-A new Flutter project.
+My info and skills are in the app.
 
 ## Getting Started
 
