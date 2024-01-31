@@ -1,8 +1,8 @@
-<h6>sohid_portfolio</h6>
+### sohid_portfolio
 
 My info and skills are in the app.
 
-## Getting Started
+Getting Started
 
 This project is a starting point for a Flutter application.
 
