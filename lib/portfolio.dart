@@ -4,6 +4,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:sohid_portfolio/about.dart';
 import 'package:url_launcher/link.dart';
 
 class Portfolio extends StatefulWidget {
@@ -39,7 +40,11 @@ class _PortfolioState extends State<Portfolio> {
                           'About',
                           style: TextStyle(color: Colors.white),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push
+                          (context, MaterialPageRoute(builder: (context) => 
+                          About(),));
+                        },
                       ),
                     )
                   ])),
