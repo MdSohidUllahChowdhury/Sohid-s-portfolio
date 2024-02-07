@@ -54,17 +54,17 @@ class _PortfolioState extends State<Portfolio> {
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children:[ Container(height: 45,
+            children:[ Container(height: 45,width: 220,
           
 
-              child: Card(shadowColor: Colors.white,elevation: 6,
+              child: Card(shadowColor: Colors.white,elevation:3,
               
                 child: Center(
                   child: Text(" HI IT'S SHAKIL CHOWDHURY",
                   
                   style: TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.w700,
+                    fontSize: 13,
+                    fontWeight: FontWeight.w600,
                   ),),
                 ),
               ),
