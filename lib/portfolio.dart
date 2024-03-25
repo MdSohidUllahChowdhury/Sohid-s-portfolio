@@ -15,6 +15,7 @@ class Portfolio extends StatefulWidget {
 }
 
 class _PortfolioState extends State<Portfolio> {
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -77,8 +78,9 @@ class _PortfolioState extends State<Portfolio> {
             width: double.infinity,
             decoration: BoxDecoration(
                 //borderRadius: BorderRadius.all(Radius.circular(25)),
-                gradient: LinearGradient(colors: [Colors.red, Colors.purple])),
-            child: Image.asset(
+                gradient: 
+                LinearGradient(colors: [Colors.red, Colors.purple])),
+                child: Image.asset(
               'image/three.png',
               //fit: BoxFit.cover,
             ),
