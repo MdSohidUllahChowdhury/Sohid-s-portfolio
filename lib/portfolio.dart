@@ -47,27 +47,24 @@ class _PortfolioState extends State<Portfolio> {
 
       body: Column(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children:[ 
-              // ignore: sized_box_for_whitespace
-              Container(
-                height: 45,
-                width: 220,
-                  child:const Card(
-                    shadowColor: Colors.white,
-                    elevation:3,
-                    child: Text(" HI IT'S SHAKIL CHOWDHURY",
-                    style: TextStyle(
-                     fontSize: 13,
-                     fontWeight: FontWeight.w600,
-                     ),
-                     textAlign: TextAlign.center,
-                     ),
-              ),
-              )
-              ],
-              ),
+          // ignore: sized_box_for_whitespace
+          Container(
+            height: 65,
+            width: 270,
+              child:const Card(
+                shadowColor: Colors.white,
+                elevation:3,
+                child: Center(
+                  child: Text(" HI IT'S SOHID CHOWDHURY",
+                  style: TextStyle(
+                   fontSize: 13,
+                   fontWeight: FontWeight.w600,
+                   ),
+                   textAlign: TextAlign.center,
+                   ),
+                ),
+          ),
+          ),
           const SizedBox(height: 10,),
           Container(
             height: 350,

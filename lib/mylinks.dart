@@ -11,6 +11,25 @@ class Mylinks extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Link(
+                  uri: Uri.parse('https://github.com/MdSohidUllahChowdhury'),
+                  builder: (context, followLink) => ElevatedButton(
+                        onPressed: followLink,
+                        child: const Icon(
+                          FontAwesomeIcons.github,
+                          size: 14,
+                        ),
+                      )),const SizedBox(width: 15,),
+              Link(
+                  uri: Uri.parse(
+                      'https://www.linkedin.com/in/sohid-chowdhury/'),
+                  builder: (context, followLink) => ElevatedButton(
+                        onPressed: followLink,
+                        child: const Icon(
+                          FontAwesomeIcons.linkedin,
+                          size: 14,
+                        ),
+                      )),const SizedBox(width: 15,),
+              Link(
                   uri: Uri.parse('https://www.facebook.com/shakilchowdhury19'),
                   builder: (context, followLink) => ElevatedButton(
                         onPressed: followLink,
@@ -25,25 +44,6 @@ class Mylinks extends StatelessWidget {
                         onPressed: followLink,
                         child: const Icon(
                           FontAwesomeIcons.instagram,
-                          size: 14,
-                        ),
-                      )),const SizedBox(width: 15,),
-              Link(
-                  uri: Uri.parse('https://github.com/MdSohidUllahChowdhury'),
-                  builder: (context, followLink) => ElevatedButton(
-                        onPressed: followLink,
-                        child: const Icon(
-                          FontAwesomeIcons.github,
-                          size: 14,
-                        ),
-                      )),const SizedBox(width: 15,),
-              Link(
-                  uri: Uri.parse(
-                      'https://open.spotify.com/user/l74fhmffuzgxt8u8gyqucrnv6'),
-                  builder: (context, followLink) => ElevatedButton(
-                        onPressed: followLink,
-                        child: const Icon(
-                          FontAwesomeIcons.spotify,
                           size: 14,
                         ),
                       )),
