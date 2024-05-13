@@ -1,7 +1,5 @@
-// ignore_for_file: prefer_const_constructors, dead_code
 import 'package:flutter/material.dart';
 import 'package:sohid_portfolio/portfolio.dart';
- 
 
 void main() {
   runApp(const MyApp());
@@ -16,12 +14,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,  
       theme: ThemeData(
         brightness: Brightness.dark,
-        
       ),
-      home:Portfolio(),
-      
-    
-    
-    );
+      home:const Portfolio(),
+      );
   }
 }
